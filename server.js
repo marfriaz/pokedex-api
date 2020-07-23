@@ -3,10 +3,10 @@ const morgan = require("morgan");
 
 const app = express();
 
-app.use(morgan("dev"));
+app.use(morgan("common"));
 
 app.use((req, res) => {
-  res.send("Hello, Marco!");
+  res.send("Hello, world!");
 });
 
 const PORT = 8000;
